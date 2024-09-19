@@ -1,11 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reynhard Halaka - Personal Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reynhard Halaka | Personal Profile - CV</title>
+
+  <!--- favicon-->
+  <link rel="shortcut icon" href="./assets/images/reylogo.png" type="image/x-icon" />
+
+  <!-- share wa -->
+  <meta property="og:title" content="Reynhard Halaka | Personal Profile - CV" />
+  <meta property="og:description" content="Web Developer / Data Analytics / Data Engineer" />
+  <meta property="og:image" content="https://rynhrd.site/assets/images/reylogo.png" />
+  <meta property="og:url" content="https://rynhrd.site/" />
+  <meta property="og:type" content="website" />
+  <!--- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css?v=1.4" />
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+
 <body>
-    <p>hello:)</p>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/reylogo.png" alt="rynhrd" width="80">
+          <!-- <img src="./assets/images/reyprofile.png" alt="rynhrd" width="80"> -->
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Reynhard Halaka">Reynhard Ramadhan Halaka</h1>
+          <p class="title">Web Developer / Data Analytics / Data Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="./assets/images/email.svg" alt="ikon desain" width="21" />
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:reynhardhalaka@gmail.com" class="contact-link">reynhardhalaka@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="./assets/images/placeholder.svg" alt="ikon desain" width="21" />
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, West Java, ID</address>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="./assets/images/job-search.svg" alt="ikon desain" width="21" />
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Download my</p>
+              <a href="#" class="contact-link">Resume/CV</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificate</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I am a Web Programmer, Data Analyst, and Automation Development. More than 4 years of experience in the Marketing Research industry company. 
+            I have extensive logic, programming techniques, and problem analysis skills. I have successfully increased the efficiency 
+            of data processing to automation by 35%, and I am experienced in using various Programming tools, especially for data 
+            processing and visualization in the form of Dashboards and Website development.
+
+            <!-- Saya merupakan Web Programmer, Data Analis, dan Automation Development. Berpengalaman lebih dari 4 
+            tahun di perusahaan industri Riset Marketing. Saya memiliki kemampuan logika, 
+            teknik pemograman, dan analisa masalah yang luas. 
+            Saya pernah berhasil meningkatkan efisiensi pengolahan data menjadi otomatisasi sebesar 35%, 
+            serta saya berpengalaman menggunakan berbagai tools Programming, terutama untuk pengolahan 
+            data dan visualisasi dalam bentuk Dashboard serta pengembangan Website. -->
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/availability-dev.svg" alt="ikon pengembangan web"width="45" />
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Application Development</h4>
+                <p class="service-item-text">Developed sophisticated web applications utilizing UML for comprehensive system design, engineered efficient SQL databases to ensure robust data management, and crafted visually appealing, user-friendly interfaces to enhance overall user experience and accessibility.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/data-generalist.svg" alt="ikon desain" width="40" />
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analytics & Data Engineer</h4>
+                <p class="service-item-text">Analyzed complex data systems using advanced analytical tools, 
+                  designed and optimized efficient SQL databases, 
+                  and developed robust data pipelines to streamline data flow. 
+                  Created interactive visualizations and user-friendly dashboards 
+                  to support data-driven decision-making.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--
+          - my skills
+        -->
+          
+        
+        <section class="myskills">
+          <h3 class="h3 service-title">My Skills</h3>
+          <div class="icon-list">
+            <div class="icon-link">
+              <img src="./assets/images/icons/php.svg" alt="php" class="icon-svg">
+              <span class="icon-name">PHP</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/html5-02.svg" alt="html" class="icon-svg">
+              <span class="icon-name">HTML</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/css3.svg" alt="css" class="icon-svg">
+              <span class="icon-name">CSS</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/bootstrap.svg" alt="bootstrap" class="icon-svg">
+              <span class="icon-name">Bootstrap</span>
+            </div>
+          </div>
+          <div class="icon-list">
+            <div class="icon-link">
+              <img src="./assets/images/icons/javascript.svg" alt="javascript" class="icon-svg">
+              <span class="icon-name">Javascript</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/jquery.svg" alt="jquery" class="icon-svg">
+              <span class="icon-name">jQuery</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/nodejs.svg" alt="nodejs" class="icon-svg">
+              <span class="icon-name">Node.js</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/json.svg" alt="json" class="icon-svg">
+              <span class="icon-name">JSON</span>
+            </div>
+          </div>
+          <div class="icon-list">
+            <div class="icon-link">
+              <img src="./assets/images/icons/python.svg" alt="python" class="icon-svg">
+              <span class="icon-name">Python</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/dbs-mysql.svg" alt="mysql" class="icon-svg">
+              <span class="icon-name">MySQL</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/dbs-postgresql.svg" alt="postgresql" class="icon-svg">
+              <span class="icon-name">PostgreSQL</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/sqlite.svg" alt="sqlite" class="icon-svg">
+              <span class="icon-name">SQLite</span>
+            </div>
+          </div>
+          <div class="icon-list">
+            <div class="icon-link">
+              <img src="./assets/images/icons/github.svg" alt="github" class="icon-svg">
+              <span class="icon-name">GitHub</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/gitlab.svg" alt="gitlab" class="icon-svg">
+              <span class="icon-name">GitLab</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/google-sheets.svg" alt="google-sheets" class="icon-svg">
+              <span class="icon-name">Gogle Sheets</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/microsoft-excel.svg" alt="microsoft-excel" class="icon-svg">
+              <span class="icon-name">Microsoft Excel</span>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+          <h3 class="h3 service-title">Interest</h3>
+          <div class="icon-list">
+            <div class="icon-link">
+              <img src="./assets/images/icons/ai.svg" alt="Artificial Intelligence" class="icon-svg">
+              <span class="icon-name">Artificial Intelligence</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/data-science.svg" alt="Data Science" class="icon-svg">
+              <span class="icon-name">Data Science</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/data-visualization.svg" alt="data-visualization" class="icon-svg">
+              <span class="icon-name">Data Visualization</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/big-data.svg" alt="big-data" class="icon-svg">
+              <span class="icon-name">Dig Data</span>
+            </div>
+          </div>
+          <div class="icon-list">
+            <div class="icon-link">
+              <img src="./assets/images/icons/web-development.svg" alt="web-development" class="icon-svg">
+              <span class="icon-name">Web Development</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/cybersecurity.svg" alt="cybersecurity" class="icon-svg">
+              <span class="icon-name">Cybersecurity</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/cloud-data-developer.svg" alt="Cloud Computing" class="icon-svg">
+              <span class="icon-name">Cloud Computing</span>
+            </div>
+            <div class="icon-link">
+              <img src="./assets/images/icons/api.svg" alt="api-development" class="icon-svg">
+              <span class="icon-name">API Development</span>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+      
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">University of Gunadarma</h4>
+                <span class="timeline-date">2014 — 2018</span>
+                <p class="timeline-text">
+                  Graduated with a S.Kom. degree in Computer Science, with a GPA of <strong>3.45/4.0</strong>
+                  demonstrating
+                  proficiency in programming, problem solving, and software development. Eager to
+                  apply knowledge
+                  in the dynamic technology industry.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">SMK Yadika 13</h4>
+                <span class="timeline-date">2011 — 2014</span>
+                <p class="timeline-text">Completed vocational education, majoring in computer & network engineering.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Experience -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="laptop-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <!-- The Nielsen Company Indonesia -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">The Nielsen Company Indonesia</h4>
+                <span class="timeline-date">Feb 2022 — Currently</span>
+                <p class="timeline-text">
+                  Automation Technical Specialist<br />
+                  <span class="timeline-text-detail">Build some ready-made tools with platform Google Workspace.</span>
+                  <span class="timeline-text-detail">Create an interviewer honorarium payment website for internal teams and vendors.</span>
+                  <span class="timeline-text-detail">Develop project assignment system for field team <i>(migration from manual to website)</i>.</span>
+                  <span class="timeline-text-detail">Developed a web-based program in collaboration with Business Analysis.</span>
+                  <span class="timeline-text-detail">Build REST API for several internal teams.</span>
+                </p>
+              </div>
+            </li>
+            <!-- The Nielsen Company Indonesia -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">The Nielsen Company Indonesia</h4>
+                <span class="timeline-date">Jan 2020 — Feb 2022</span>
+                <p class="timeline-text">
+                  Digital Automation<br />
+                  <span class="timeline-text-detail">Build a Google Workspace automation system.</span>
+                  <span class="timeline-text-detail">Create data summaries and dashboards to support team analysis with Google Sheets.</span>
+                  <span class="timeline-text-detail">Create team internal tools, <i>(work order system)</i>.</span>
+                  <span class="timeline-text-detail">Manage all database warehouse.</span>
+                </p>
+              </div>
+            </li>
+            <!-- Freelance Web Developer (Bekasi, Indonesia) -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">Freelance Web Developer (Bekasi, Indonesia)</h4>
+                <span class="timeline-date">Oct 2019 - Dec 2019</span>
+                <p class="timeline-text">
+                  Full-stack - Web Developer<br />
+                  <span class="timeline-text-detail">Build some ready-made website projects.</span>
+                  <span class="timeline-text-detail">Design the desired feature requirements.</span>
+                  <span class="timeline-text-detail">Ensure the website is built according to user needs.</span>
+                  <span class="timeline-text-detail">Implement innovative solutions to meet the needs of users in
+                    creating features on the website.</span>
+                </p>
+              </div>
+            </li>
+            <!-- PT. Doosan Cipta Busana Jaya -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">PT. Doosan Cipta Busana Jaya</h4>
+                <span class="timeline-date">Sep 2019 - Oct 2019</span>
+                <p class="timeline-text">
+                  Data Entry Specialist <br />
+                  <span class="timeline-text-detail">Input data on import and export procurement.</span>
+                  <span class="timeline-text-detail">Produce financial reports.</span>
+                </p>
+              </div>
+            </li>            
+            <!-- BBPLK KEMNAKER -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">BBPLK KEMNAKER</h4>
+                <span class="timeline-date">Mar 2019 - Agu 2019</span>
+                <p class="timeline-text">
+                  Professional Career Progression<br />
+                  <span class="timeline-text-detail">Participating in Junior Web Programming Training or Bootcamp organized by KEMNAKER.</span>
+                  <span class="timeline-text-detail">Get to know the basics and advanced programming of HTML, CSS, PHP, and Database.</span>
+                </p>
+              </div>
+            </li>
+            
+          </ol>
+        </section>
+
+        <!-- Competence -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="extension-puzzle-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Competence</h3>
+          </div>
+          <ol class="timeline-list">
+            <!-- Technical Skills -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">Technical Skills</h4>
+                <p class="timeline-text">
+                  <span class="timeline-text-detail">Proficient in PHP, JavaScript, and Python.</span>
+                  <span class="timeline-text-detail">Understanding of web development frameworks: PHP Native.</span>
+                  <span class="timeline-text-detail">Extensive experience with databases such as MySQL, PostgreSQL, and SQLite.</span>
+                  <span class="timeline-text-detail">Familiar with cloud platforms like Docker for containerization.</span>
+                </p>
+              </div>
+            </li>
+            <!-- Analytical & Problem-Solving -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">Analytical & Problem-Solving</h4>
+                <p class="timeline-text">
+                  <span class="timeline-text-detail">Skilled in data analysis and visualization using Excel, GoogleSheet, SQL, and Python <i>(Pandas, Matplotlib)</i>.</span>
+                  <span class="timeline-text-detail">Adept at diagnosing complex system issues and implementing optimized solutions.</span>
+                  <span class="timeline-text-detail">Experienced in database relation, algorithm design and optimization for process efficiency.</span>
+                </p>
+              </div>
+            </li>
+            <!-- Communication & Collaboration -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">Communication & Collaboration</h4>
+                <p class="timeline-text">
+                  <span class="timeline-text-detail">Excellent written and verbal communication skills for technical and non-technical audiences.</span>
+                  <span class="timeline-text-detail">Strong collaboration skills with team members, stakeholders, and clients.</span>
+                  <span class="timeline-text-detail">Experience in presenting and pitching technical concepts to clients and upper management.</span>
+                </p>
+              </div>
+            </li>
+            <!-- Adaptability & Learning -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">Adaptability & Learning</h4>
+                <p class="timeline-text">
+                  <span class="timeline-text-detail">Quick learner, consistently staying up-to-date with emerging technologies.</span>
+                  <span class="timeline-text-detail">Ability to adapt to fast-paced environments and learn new tools and programming languages swiftly.</span>
+                </p>
+              </div>
+            </li>
+            <!-- Language Skills -->
+            <li class="timeline-item">
+              <div class="experience-timeline-content">
+                <h4 class="h4 timeline-item-title">Language Skills</h4>
+                <p class="timeline-text">
+                  <span class="timeline-text-detail">Indonesia Language: Fluent (native proficiency in speaking, reading, and writing).</span>
+                  <span class="timeline-text-detail">English: Basic proficiency (able to read and write, but limited in speaking and listening comprehension).</span>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <!--
+        - #Certificate
+      -->
+
+      <article class="certificate" data-page="certificate">
+        <header>
+          <h2 class="h2 article-title">Certificate</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn="">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="">Data Generalist</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="">Web development</button>
+            </li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select="">
+              <div class="select-value" data-selecct-value="">Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down" role="img" class="md hydrated" aria-label="chevron down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item="">All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="">Data Generalist</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="">Web development</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item="" data-category="data generalist">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/certificate/Reynhard_Halaka_Data-Science-with-Phyton-Sertifikat-Kelas-Data-Science.jpg" alt="hbskrj-dswp" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Certificate from Habis Kerja</h3>
+                <p class="project-category">Data Science - with Phyton</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item="" data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/certificate/Reynhard_Halaka_FrontendBackend-Integration-MySkill.jpg" alt="myskill-webdev" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Certificate from MySkill</h3>
+                <p class="project-category">Frontend & Backend Integration</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item="" data-category="data generalist">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/certificate/Reynhard_Halaka_certificate_RevoU_Data_Analytics.jpg" alt="revou-damc" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Certificate from RevoU</h3>
+                <p class="project-category">Data Analytics - Mini Course</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Modal Structure -->
+      <div id="imageModal" class="modal-certificate">
+        <span class="close-certificate">&times;</span>
+        <img class="modal-content-certificate" id="modalImage">
+        <div class="modal-text">
+          <h3 id="modalTitle"></h3>
+          <p id="modalCategory"></p>
+        </div>
+      </div>
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="blog" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="#project">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Projects/pos_yms.png" alt="pos-yms" loading="lazy" />
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Point of Sale</p>
+                  </div>
+                  <h3 class="h3 blog-item-title">Website - YMS Speedshop</h3>
+                  <p class="blog-text">I developed a Point of Sale (POS) website for YMS Speedshop, designed to manage sales transactions, inventory, and customer data efficiently. The system features a user-friendly interface, real-time updates, and reporting tools to streamline store operations and improve overall business management.</p>                    
+                  <div class="blog-svg-icons">  
+                    <section class="projects">
+                      <div class="icon-list-project">
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/php.svg" alt="php" title="PHP" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/html5-02.svg" alt="php" title="HTML5" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/css3.svg" alt="css" title="CSS" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/javascript.svg" alt="javascript" title="JavaScript" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/bootstrap.svg" alt="bootstrap" title="Bootstrap" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/dbs-mysql.svg" alt="mysql" title="MySQL" class="icon-svg-project">
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </a>
+            </li>            
+            <li class="blog-post-item">              
+              <a href="#project">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Projects/automation-spk.png" alt="automation-spk" loading="lazy" />
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Automation</p>
+                  </div>
+                  <h3 class="h3 blog-item-title">SPK (Surat Perintah Kerja)</h3>
+                  <p class="blog-text">I developed an automation system for Surat Perintah Kerja using Google Sheets and Google Scripts. This solution streamlines the process of generating work orders, automating data entry, document creation, and email notifications, significantly improving efficiency and reducing manual work.</p>
+                    
+                  <div class="blog-svg-icons">  
+                    <section class="projects">
+                      <div class="icon-list-project">
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/google-sheets.svg" alt="googlesheet" title="Google Sheet" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/google_apps_script.svg" alt="googleappsscripts" title="Google Apps Scripts" class="icon-svg-project">
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </a>
+            </li>            
+            <li class="blog-post-item">              
+              <a href="https://github.com/rynhrd/AmazonPrime-Data-Visualization" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Projects/data_analytics_revou.jpg" alt="automation-spk" loading="lazy" />
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+                  </div>
+                  <h3 class="h3 blog-item-title">Mini Course - Amazon Prime</h3>
+                  <p class="blog-text">I created a Mini Course on Data Analytics using the Amazon Prime dataset. The project involved data cleaning, exploration, and visualization to uncover key insights about user behavior and content trends.</p>                    
+                  <div class="blog-svg-icons">  
+                    <section class="projects">
+                      <div class="icon-list-project">
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/python.svg" alt="googleappsscripts" title="python" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/google-sheets.svg" alt="googlesheet" title="google-sheets" class="icon-svg-project">
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </a>
+            </li>            
+            <li class="blog-post-item">              
+              <a href="https://github.com/rynhrd/AmazonPrime-Data-Visualization" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Projects/bimbel-ojokendor.jpg" alt="automation-spk" loading="lazy" />
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Company Profile</p>
+                  </div>
+                  <h3 class="h3 blog-item-title">Website - Bimbel OjoKendor</h3>
+                  <p class="blog-text">I built a company profile website for Bimbel OjoKendor, a tutoring service, featuring a clean interface, course information, and enrollment forms. The site is responsive and user-friendly, designed to improve the company's online presence and engage both students and parents.</p>                    
+                  <div class="blog-svg-icons">  
+                    <section class="projects">
+                      <div class="icon-list-project">
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/html5-02.svg" alt="googleappsscripts" title="html" class="icon-svg-project">
+                        </div>
+                        <div class="list-tools-project">
+                          <img src="./assets/images/icons/nodejs.svg" alt="googlesheet" title="nodejs" class="icon-svg-project">
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+          <section class="clients">
+            <div class="section-header">
+              <p class="section-description">I welcome inquiries and connections from anyone interested in collaborating or offering work. You can reach me through several platforms:</p>
+            </div>
+            <div class="icon-list">
+              <div class="icon-link">
+                <a href="mailto:reynhardhalaka@gmail.com" target="_blank" class="social-link">
+                  <img src="./assets/images/icons/email.svg" alt="Email" class="icon-svg">
+                </a>
+                <span class="icon-name">Email</span>
+              </div>
+              <div class="icon-link">
+                <a href="https://www.linkedin.com/in/rynhrd/" target="_blank" class="social-link">
+                  <img src="./assets/images/icons/linkedin.svg" alt="Linkedin" class="icon-svg">
+                </a>
+                <span class="icon-name">Linkedin</span>
+              </div>
+              <div class="icon-link">
+                <a href="https://wa.me/6281294520785" target="_blank" class="social-link">
+                  <img src="./assets/images/icons/whatsapp.svg" alt="WhatsApp" class="icon-svg">
+                </a>
+                <span class="icon-name">WhatsApp</span>
+              </div>
+              <div class="icon-link">
+                <a href="https://www.instagram.com/rynhrd" target="_blank" class="social-link">
+                  <img src="./assets/images/icons/instagram.svg" alt="Instagram" class="icon-svg">
+                </a>
+                <span class="icon-name">Instagram</span>
+              </div>
+              <div class="icon-link">
+                <a href="https://github.com/rynhrd" target="_blank" class="social-link">
+                  <img src="./assets/images/icons/github.svg" alt="GitHub" class="icon-svg">
+                </a>
+                <span class="icon-name">GitHub</span>
+              </div>
+            </div>
+          </section>
+      </article>
+    </div>
+  </main>
+    
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
